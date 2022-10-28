@@ -149,6 +149,17 @@ function submition() {
         err_msg_b.innerHTML = "";
     }
 
+
+    const num_warn = document.querySelector ('.num_warn');
+    const p_no = document.querySelector ('.p_no');
+
+    if (p_no.value == "") {
+        num_warn.innerHTML ="Enter phone number <span><img src='Images/icon-error.svg' alt='error'></span>";
+        num_warn.style = "display: flex; justify-content: space-between; align-items: center; font-size: 14px; background-color: hsl(0, 94%, 66%); color: white; padding: 8px; width: 86%";
+    }
+    else {
+        num_warn.innerHTML = "";
+    }
     //Display Thank you card
 
     let thanks = document.querySelector('.info_c');
@@ -156,7 +167,7 @@ function submition() {
     const email_ad = document.querySelector ('#mail').value;
 
 
-    if (email.match(pattern) && password === confirm && f_name.value !== "" && l_name.value !== "" && usr.value !== "") {
+    if (email.match(pattern) && password === confirm && f_name.value !== "" && l_name.value !== "" && usr.value !== "" && p_no.value !== "") {
 
         localStorage.setItem('name', userName);
         localStorage.setItem('pw', password);
