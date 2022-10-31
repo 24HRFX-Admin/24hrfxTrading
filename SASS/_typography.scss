@@ -15,7 +15,7 @@ h2 {
 }
 p {
     text-align: center;
-    word-spacing: 4px;
+    word-spacing: 5px;
 }
 .container {
     font-size: 18px;
@@ -165,4 +165,9 @@ a:hover {
 
 #name_stated {
     margin-bottom: 10px;
+}
+
+.pay_inst p{
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
 }

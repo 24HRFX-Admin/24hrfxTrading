@@ -326,7 +326,17 @@ table {
         background-color: hsl(244, 38%, 26%);
     }
 }
+
 .reg_r:hover {
     color: cyan;
     cursor: pointer;
+}
+.phone_nums {
+    margin-left: 40px;
+}
+.phone_nums span {
+    color: lightblue;
+}
+.phone_nums span:nth-child(1) {
+    color: var(--txt);
 }
