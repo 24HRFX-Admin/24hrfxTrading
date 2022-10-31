@@ -242,7 +242,7 @@ next.addEventListener ('click', ()=> {
 })
 
 
-//FORGOT PASSWORD ACTION
+/*FORGOT PASSWORD ACTION
 
 const forgot = document.querySelector('.forgot');
 
@@ -259,7 +259,7 @@ forgot.addEventListener ('click', ()=> {
     options.style = "display:none";
 })
 
-
+*/
 
 // SHOW | HIDE PASSWORD
 
