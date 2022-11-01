@@ -49,7 +49,7 @@ icons_menu.forEach (icon_menu => {
     })
 })
 
-
+/*
 const withdraw = document.querySelector ('.withdraw');
 const nxt_msg = document.querySelector ('.nxt_msg');
 const exit = document.querySelector ('.exit');
@@ -71,7 +71,6 @@ const pcb = document.querySelector ('.pack_code_b')
 
 
 withdraw.addEventListener ('click', ()=> {
-    //msg.classList.remove ('hidden');
     head_pack.classList.add ('hidden');
     foot_pack.classList.add ('hidden');
     h_pack.classList.add ('hidden');
@@ -119,5 +118,5 @@ withdraw.addEventListener ('click', ()=> {
         })
     })
 })
-
+*/
 

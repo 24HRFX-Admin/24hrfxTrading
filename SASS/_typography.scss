@@ -135,18 +135,19 @@ a:hover {
 }
 
 .deal {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0;
     
     & > div {
-        margin-bottom: 12px;
+        margin-bottom: 1rem;
 
         @media (max-width: 2040px) {
-            font-size: 24px;
+            font-size: 28px;
         }
         @media (max-width: 600px) {
-            font-size: 18px;
+            font-size: 24px;
         }
     }
+    
 }
 
 
@@ -170,4 +171,8 @@ a:hover {
 .pay_inst p{
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
+}
+
+.under_ans p{
+    font-size: 22px;
 }

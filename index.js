@@ -71,7 +71,7 @@ btn_r.addEventListener ('click', ()=> {
     selected.innerHTML = "Registration";
 })
 
-s_r.addEventListener ('click', ()=> {
+/*s_r.addEventListener ('click', ()=> {
     login_opt.classList.remove ("active");
     reg_opt.classList.add ("active");
 
@@ -80,7 +80,7 @@ s_r.addEventListener ('click', ()=> {
 
     selected.innerHTML = "Registration";
 })
-
+*/
 
 // EMAIL VALIDITY CHECK & PASSWORD CONFIRMATION
 
