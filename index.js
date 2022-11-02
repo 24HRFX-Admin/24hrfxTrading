@@ -334,8 +334,6 @@ pay.addEventListener ('click', ()=> {
             alert("Please fill the required field")
         }
         else {
-            alert("Your Payment is being processed. Please wait for a response from 24HRFX TRADING ORG.");
-
             payment_methods.classList.add ("hidden");
             wait.classList.remove ("hidden");
             head.style = "display: none" 
