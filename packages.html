@@ -30,6 +30,9 @@
                 <div class="under_nav">
                     <a href="./faq.html">FAQ</a>
                 </div>
+                <div class="under_nav">
+                    <a href="./account.html">Account</a>
+                </div>
                 <div class="hold under_nav">
                     <button class="btn logout logout_pack">
                         Log Out
@@ -40,73 +43,8 @@
     </header>
 
     <main style="padding-top: 12px; padding-bottom: 20px">
-        <div class="dropdown">
-            <div class="account">
-                <div class="acc">Account</div>
-                <div class="drop_arrow">
-                    <img src="Images/icon-arrow.svg" alt="arrow">
-                </div>
-            </div>
-            
-            <div class="profile prof_acc user_acc">
-                <h1 class="prof_h">User Profile</h1>
-    
-                <div class="person">
-                    <img src="Images/person-svgrepo-com.svg" alt="person">
-                </div>
-                <div class="name_acc"></div>
-                <div class="mail_acc"></div>
-                <div class="status">STATUS: <span style="color:limegreen">Active</span></div>
 
-                <div class="usr_hist hidden">
-                    <h2 class="table_h">Investment History</h2>
-                    <table>
-                        <tr>
-                            <th>Active Investment</th>
-                            <th>Withdrawable Balance</th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
 
-                <p style="color: crimson; font-size: 18px">Withdrawal requests are processed only after 24 hours of maturity!</p>
-
-                <button class="btn withdraw" style="background-color: darkcyan">
-                    Withdraw
-                </button>
-            </div>
-        </div>
-
-        <div class="enter_fields hidden">
-            <p>Fill in your full names (as registered with M-pesa services) and your mobile number below:</p>
-            <div class="fields">
-                <input type="text" placeholder="Full Name" class="fullName">
-                <input type="text" placeholder="Mobile Number" class="mobileNumber">
-            </div>
-            <div class="nxt_hold">
-                <button class="btn nxt_msg">
-                    Next
-                </button>
-            </div>
-
-        </div>
-
-        <div class="msg hidden">
-            <p>Your investment plan that you enrolled has ended. You are eligible to receive profit.</p>
-            <p>Kindly Make payment of $45, withdrawal fee.</p>
-
-            <div>
-                <button class="btn pay_fee">
-                    Pay fee
-                </button>
-                <button class="btn exit">
-                    Exit
-                </button>
-            </div>
-        </div>
         
         <h2 class="h_pack">Investment Packages</h1>
             <p class="p_ins" style="font-size: 18px;">Select any of the packages below to invest. You will get payment instructions after clicking on your preferred package.</p>
@@ -402,9 +340,9 @@
                 <div>
                     <a href="faq.html">FAQ</a>
                 </div>
-                <!--<div>
+                <div>
                     <a href="./account.html">Account</a>
-                </div>-->
+                </div>
             </div>
         </div>
 
@@ -435,24 +373,6 @@
     <script src="script.js"></script>
 
     <script>
-        const name_acc = document.querySelector ('.name_acc');
-        const mail_acc = document.querySelector ('.mail_acc');
-
-        var storedName_pack = localStorage.getItem('name');
-       // var storedPw_pack = localStorage.getItem('pw');
-        var storedMail_pack = localStorage.getItem('email');
-
-        name_acc.innerHTML = storedName_pack;
-        mail_acc.innerHTML = storedMail_pack;
-
-        const account = document.querySelectorAll('.account');
-
-        for (i=0; i < account.length; i++) {
-            account[i].addEventListener('click',change);
-            function change() {
-                this.classList.toggle ('active');
-            };
-        }
 
         const deal_a = document.querySelector ('.deal_a');
         const deal_b = document.querySelector ('.deal_b');
@@ -472,37 +392,37 @@
             pay_inst.classList.remove ('hidden');
             grid.classList.add ('hidden');
             p_ins.classList.add ('hidden');
-            sel_inv.innerHTML = "$30 (70,000.00 Tzs)";
+            sel_inv.innerHTML = "$30";
         })
         deal_b.addEventListener ('click', ()=> {
             pay_inst.classList.remove ('hidden');
             grid.classList.add ('hidden');
             p_ins.classList.add ('hidden');
-            sel_inv.innerHTML = "$40 (94,00.00 Tzs)";
+            sel_inv.innerHTML = "$40";
         })
         deal_c.addEventListener ('click', ()=> {
             pay_inst.classList.remove ('hidden');
             grid.classList.add ('hidden');
             p_ins.classList.add ('hidden');
-            sel_inv.innerHTML = "$50 (117,000.00 Tzs)";
+            sel_inv.innerHTML = "$50";
         })
         deal_d.addEventListener ('click', ()=> {
             pay_inst.classList.remove ('hidden');
             grid.classList.add ('hidden');
             p_ins.classList.add ('hidden');
-            sel_inv.innerHTML = "$100 (233,500.00 Tzs)";
+            sel_inv.innerHTML = "$100";
         })
         deal_e.addEventListener ('click', ()=> {
             pay_inst.classList.remove ('hidden');
             grid.classList.add ('hidden');
             p_ins.classList.add ('hidden');
-            sel_inv.innerHTML = "$150 (349,840.00 Tzs)";
+            sel_inv.innerHTML = "$150";
         })
         deal_f.addEventListener ('click', ()=> {
             pay_inst.classList.remove ('hidden');
             grid.classList.add ('hidden');
             p_ins.classList.add ('hidden');
-            sel_inv.innerHTML = "$200 (467,000.00 Tzs)";
+            sel_inv.innerHTML = "$200";
         })
 
 
@@ -531,75 +451,18 @@
                 };
             }
 
-
-        const withdraw = document.querySelector ('.withdraw');
-        const nxt_msg = document.querySelector ('.nxt_msg');
-        const exit = document.querySelector ('.exit');
-        const pay_fee = document.querySelector ('.pay_fee');
-        const msg = document.querySelector ('.msg');
-        const main = document.querySelector ('main');
-        const head_pack = document.querySelector ('header');
-        const foot_pack = document.querySelector ('footer');
+    
         const h_pack = document.querySelector ('.h_pack');
         const grid_pack = document.querySelector ('.grid');
         const inst_p = document.querySelector ('.pay_inst');
         const inst_b = document.querySelector ('.pay_inst_b');
-        const drop_down = document.querySelector ('.dropdown');
         const nxt_package = document.querySelector ('.nxt_pack');
-        const enter_fields = document.querySelector ('.enter_fields');
         const ins_p = document.querySelector ('.p_ins');
         const pcb = document.querySelector ('.pack_code_b')
 
 
 
-        withdraw.addEventListener ('click', ()=> {
-            head_pack.classList.add ('hidden');
-            foot_pack.classList.add ('hidden');
-            h_pack.classList.add ('hidden');
-            grid_pack.classList.add ('hidden');
-            inst_p.classList.add ('hidden');
-            ins_p.classList.add ('hidden');
-            drop_down.classList.add ('hidden');
-            enter_fields.classList.remove('hidden');
-
-            nxt_msg.addEventListener ('click', ()=> {
-                const fname = document.querySelector ('.fullName');
-                const mnum = document.querySelector ('.mobileNumber');
-
-                if (fname.value == "" && mnum.value == "") {
-                    alert ("Fill in the required fields !")
-                }
-                else if (fname.value == "" || mnum.value == "") {
-                    alert ("Fill in the remaining required field !")
-                }
-                else {
-                    msg.classList.remove ('hidden');
-                    enter_fields.classList.add('hidden');
-                }
-            })
-
-            main.style = "padding: 40px 12px";
-
-            exit.addEventListener ('click', ()=> {
-                window.location = "./packages.html"
-            })
-
-            pay_fee.addEventListener ('click', ()=> {
-                inst_b.classList.remove ('hidden');
-                msg.classList.add ('hidden');
-
-                nxt_package.addEventListener ('click', ()=> {
-                    if (pcb.value == "") {
-                        alert("Fill in the required field !")
-                    }
-                    else {
-                        alert("Your Payment is being processed. Please wait for a response from 24HRFX TRADING ORG.");
-
-                        window.location = "./packages.html";
-                    }
-                })
-            })
-        })
+    
 
         logo_pack.addEventListener ('click', ()=> {
             window.location = "./page1.html";
