@@ -220,10 +220,7 @@ loginPress.addEventListener ('click', ()=> {
         mail_acc.innerHTML = storedMail;*/
     }
     else if(userName.value == storedName && userPw.value == storedPw && identity === userId){
-        window.location = "./packages.html";
-
-        namePerson.innerHTML = storedName;
-        mailSet.innerHTML = storedMail;
+        window.location = "./account.html";
     }
     else{
         alert('Error on login');
