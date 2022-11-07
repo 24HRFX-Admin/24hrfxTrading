@@ -286,6 +286,96 @@
                     
                                 <div>
                                     <div class="deal deal_d">
+                                        <div>Deposit: <span class="investment">$60</span></div>
+                                        <div>Income: <span>$240</span></div>
+                                    </div>
+                                    <div class="faq convert">
+                                        <div class="question">
+                                            <p class="p_conv"><span>Convert</span><span><img src="Images/icon-arrow.svg" alt="arrow"></span></p>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="con_ans">
+                                                <div class="under_ans dep">
+                                                    <h3>Deposit</h3>
+                                                    <p>139,920.00 Tzs</p>
+                                                    <p>7,293.00 KES</p>
+                                                    <p>224,050.00 UGX</p>
+                                                    <p>970.00 ZMW</p>
+                                                </div>
+                                                <div class="under_ans inc">
+                                                    <h3>Income</h3>
+                                                    <p>559,680.00 Tzs</p>
+                                                    <p>29,172.00 KES</p>
+                                                    <p>896,210.00 UGX</p>
+                                                    <p>3,855.00 ZMW</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div>
+                                    <div class="deal deal_e">
+                                        <div>Deposit: <span class="investment">$80</span></div>
+                                        <div>Income: <span>$320</span></div>
+                                    </div>
+                                    <div class="faq convert">
+                                        <div class="question">
+                                            <p class="p_conv"><span>Convert</span><span><img src="Images/icon-arrow.svg" alt="arrow"></span></p>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="con_ans">
+                                                <div class="under_ans dep">
+                                                    <h3>Deposit</h3>
+                                                    <p>186,560.00 Tzs</p>
+                                                    <p>9,724.00 KES</p>
+                                                    <p>298,740.00 UGX</p>
+                                                    <p>1,284.00 ZMW</p>
+                                                </div>
+                                                <div class="under_ans inc">
+                                                    <h3>Income</h3>
+                                                    <p>746,240.00 Tzs</p>
+                                                    <p>38,896.00 KES</p>
+                                                    <p>1,194,935.00UGX</p>
+                                                    <p>5,134.00 ZMW</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div>
+                                    <div class="deal deal_f">
+                                        <div>Deposit: <span class="investment">$90</span></div>
+                                        <div>Income: <span>$360</span></div>
+                                    </div>
+                                    <div class="faq convert">
+                                        <div class="question">
+                                            <p class="p_conv"><span>Convert</span><span><img src="Images/icon-arrow.svg" alt="arrow"></span></p>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="con_ans">
+                                                <div class="under_ans dep">
+                                                    <h3>Deposit</h3>
+                                                    <p>209,880.00 Tzs</p>
+                                                    <p>10,940.00 KES</p>
+                                                    <p>336,080.00 UGX</p>
+                                                    <p>1,444.00 ZMW</p>
+                                                </div>
+                                                <div class="under_ans inc">
+                                                    <h3>Income</h3>
+                                                    <p>839,520.00 Tzs</p>
+                                                    <p>43,758.00 KES</p>
+                                                    <p>1,344,310.00 UGX</p>
+                                                    <p>1,5776.00 ZMW</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div>
+                                    <div class="deal deal_g">
                                         <div>Deposit: <span class="investment">$100</span></div>
                                         <div>Income: <span>$300</span></div>
                                     </div>
@@ -315,7 +405,7 @@
                                 </div>
                     
                                 <div>
-                                    <div class="deal deal_e">
+                                    <div class="deal deal_h">
                                         <div>Deposit: <span class="investment">$150</span></div>
                                         <div>Income: <span>$400</span></div>
                                     </div>
@@ -345,7 +435,7 @@
                                 </div>
                                 
                                 <div>
-                                    <div class="deal deal_f">
+                                    <div class="deal deal_i">
                                         <div>Deposit: <span class="investment">$200</span></div>
                                         <div>Income: <span>$500</span></div>
                                     </div>
@@ -374,6 +464,7 @@
                                     </div>
                                 </div>
                             </div>
+                    
 
                             <div class="pay_inst hidden">
                                 <h1>Pay via M-Pesa, MTN, Voda, Halotel, Airtel, Tigo, BTC, USDT or Ethereum </h1>
@@ -542,6 +633,9 @@
         const deal_d = document.querySelector ('.deal_d');
         const deal_e = document.querySelector ('.deal_e');
         const deal_f = document.querySelector ('.deal_f');
+        const deal_g = document.querySelector ('.deal_g');
+        const deal_h = document.querySelector ('.deal_h');
+        const deal_i = document.querySelector ('.deal_i');
         const grid = document.querySelector ('.grid');
         const sel_inv = document.querySelector ('.sel_inv');
         const another = document.querySelector ('.another');
@@ -574,15 +668,33 @@
             pay_inst.classList.remove ('hidden');
             grid.classList.add ('hidden');
             p_ins.classList.add ('hidden');
-            sel_inv.innerHTML = "$100";
+            sel_inv.innerHTML = "$60";
         })
         deal_e.addEventListener ('click', ()=> {
             pay_inst.classList.remove ('hidden');
             grid.classList.add ('hidden');
             p_ins.classList.add ('hidden');
-            sel_inv.innerHTML = "$150";
+            sel_inv.innerHTML = "$80";
         })
         deal_f.addEventListener ('click', ()=> {
+            pay_inst.classList.remove ('hidden');
+            grid.classList.add ('hidden');
+            p_ins.classList.add ('hidden');
+            sel_inv.innerHTML = "$90";
+        })
+        deal_g.addEventListener ('click', ()=> {
+            pay_inst.classList.remove ('hidden');
+            grid.classList.add ('hidden');
+            p_ins.classList.add ('hidden');
+            sel_inv.innerHTML = "$100";
+        })
+        deal_h.addEventListener ('click', ()=> {
+            pay_inst.classList.remove ('hidden');
+            grid.classList.add ('hidden');
+            p_ins.classList.add ('hidden');
+            sel_inv.innerHTML = "$150";
+        })
+        deal_i.addEventListener ('click', ()=> {
             pay_inst.classList.remove ('hidden');
             grid.classList.add ('hidden');
             p_ins.classList.add ('hidden');
