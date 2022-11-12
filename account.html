@@ -102,7 +102,19 @@
             </div>
         </div>    
 
-        
+        <div class="processing hidden">
+            <p><b>Withdrawal request successful !!</b></p>
+            <p>An email confirmation of the same has been sent.</p>
+            <p>Withdrawal request ID:</p>
+            <p style="color: lightblue"><b>TYF67824575</b></p>
+
+            <div class="hold-ok">
+                <button class="btn okay">
+                    Ok
+                </button>
+            </div>
+        </div>
+
         <div class="pay_inst_b hidden">
             <h1>Pay via M-Pesa, MTN, Voda, Halotel, Airtel, Tigo, BTC, USDT or Ethereum </h1>
             <p>
@@ -181,7 +193,7 @@
                 </a>
             </div>
             <div class="media_c">
-                <a href="https://t.me/T24HRFXTRADINGORG" target="blank">
+                <a href="https://t.me/tg24HrFxTradingOrg" target="blank">
                     <img src="Images/telegram-logo-svgrepo-com.svg" alt="tel">
                 </a>
             </div>
@@ -286,13 +298,20 @@
                 msg.classList.add ('hidden');
 
                 nxt_package.addEventListener ('click', ()=> {
+
+                    const processing = document.querySelector ('.processing');
                     if (pcb.value == "") {
                         alert("Fill in the required field !")
                     }
                     else {
-                        alert("Your Payment is being processed. Please wait for a response from 24HRFX TRADING ORG.");
+                        processing.classList.remove ('hidden');
+                        inst_b.classList.add('hidden');
 
-                        window.location = "./account.html";
+                        const okay = document.querySelector ('.okay');
+
+                        okay.addEventListener ('click', ()=> {
+                            window.location = './account.html';
+                        })
                     }
                 })
             })

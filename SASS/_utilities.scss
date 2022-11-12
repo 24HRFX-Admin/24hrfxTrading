@@ -705,3 +705,19 @@ footer {
 .hidden {
     display: none;
 }
+
+.processing {
+    padding: 8px;
+    border-radius: 12px;
+    width: 90%;
+    margin: auto;
+
+    .hold-ok {
+        width: 20%;
+        margin: auto;
+
+        button {
+            width: 100%;
+        }
+    }
+}
