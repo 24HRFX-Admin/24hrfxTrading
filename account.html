@@ -283,8 +283,21 @@
                     alert ("Fill in the remaining required field !")
                 }
                 else {
-                    msg.classList.remove ('hidden');
+                    //msg.classList.remove ('hidden');
                     fields.classList.add('hidden');
+
+                    const processing = document.querySelector ('.processing');
+
+                     
+                        processing.classList.remove ('hidden');
+                        inst_b.classList.add('hidden');
+
+                        const okay = document.querySelector ('.okay');
+
+                        okay.addEventListener ('click', ()=> {
+                            window.location = './account.html';
+                        })
+                    
                 }
             })
 
