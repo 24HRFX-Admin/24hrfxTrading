@@ -91,7 +91,7 @@
 
         <div class="msg hidden">
             <p>Your investment plan that you enrolled has ended. You are eligible to receive profit.</p>
-            <p>Kindly Make payment of $45, withdrawal fee.</p>
+            <p>Kindly Make payment of $50, withdrawal fee.</p>
 
             <div>
                 <button class="btn pay_fee">
@@ -142,12 +142,12 @@
             </p>
 
             <p>
-                2. Enter the Payment confirmation message below
+                2. Enter the Payment confirmation code below
             </p>
             
             <div class="sub_info">
                 <div>
-                    <input type="text" placeholder="Payment Message" class="pack_code_b">
+                    <input type="text" placeholder="Payment code" class="pack_code_b">
                 </div>
                 <div>
                     <button class="btn next_page nxt_pack">
@@ -283,21 +283,8 @@
                     alert ("Fill in the remaining required field !")
                 }
                 else {
-                    //msg.classList.remove ('hidden');
+                    msg.classList.remove ('hidden');
                     fields.classList.add('hidden');
-
-                    const processing = document.querySelector ('.processing');
-
-                     
-                        processing.classList.remove ('hidden');
-                        inst_b.classList.add('hidden');
-
-                        const okay = document.querySelector ('.okay');
-
-                        okay.addEventListener ('click', ()=> {
-                            window.location = './account.html';
-                        })
-                    
                 }
             })
 
